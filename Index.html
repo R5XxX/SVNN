@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        /* Fondo con imagen */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://drive.google.com/uc?id=17TPJ4J4Yen_ijHHEumfcJa9hm-URNMRh') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .question {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .buttons {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background-color: #ff66b2;
+            color: white;
+        }
+
+        .yes:hover {
+            background-color: #ff3385;
+        }
+
+        .no {
+            background-color: #888;
+            color: white;
+        }
+
+        .no:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="question">¿Quieres ser mi San Valentín? ❤️</div>
+        <div class="buttons">
+            <button class="yes" onclick="showSticker('yes')">Sí 💖</button>
+            <button class="no" onclick="redirectToVideo()">No 💔</button>
+        </div>
+    </div>
+
+    <script>
+        function showSticker(answer) {
+            if (answer === 'yes') {
+                alert("¡Muchas gracias bonita, te espero el 14! ❤️");
+            }
+        }
+
+        function redirectToVideo() {
+            window.location.href = "https://youtube.com/shorts/U1CLOvfl02k?si=nF548addPnF-gcJg";
+        }
+    </script>
+
+</body>
+</html>
